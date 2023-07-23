@@ -18,6 +18,6 @@ permissions:
 jobs:
   connect:
     name: connect
-    runs-on: ubuntu-latest
+    runs-on: Ubuntu-latest
     steps:
       - uses: lucyc850/ssh-action@master
