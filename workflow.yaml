@@ -1,0 +1,23 @@
+name: connect
+
+on:
+  pull_request:
+    branches:
+      - '*'
+  push:
+    branches:
+      - master
+      
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+  actions: read
+
+jobs:
+  connect:
+    name: connect
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lucyc850/ssh-action@master
